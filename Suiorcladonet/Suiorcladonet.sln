@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Core", "01 Core", "{2B53F180-E655-4D62-81B8-BCF2FA954327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emb.Poseidon.Utils", "Emb.Poseidon.Utils\Emb.Poseidon.Utils.csproj", "{7D0E60B0-6DBE-4FF1-99A5-FEB68936864E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emb.Poseidon.Oracle.DataAccess", "Emb.Poseidon.Oracle.DataAccess\Emb.Poseidon.Oracle.DataAccess.csproj", "{23894630-7DD6-4AC4-B8AC-6D6E4237294F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D0E60B0-6DBE-4FF1-99A5-FEB68936864E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0E60B0-6DBE-4FF1-99A5-FEB68936864E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0E60B0-6DBE-4FF1-99A5-FEB68936864E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0E60B0-6DBE-4FF1-99A5-FEB68936864E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23894630-7DD6-4AC4-B8AC-6D6E4237294F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23894630-7DD6-4AC4-B8AC-6D6E4237294F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23894630-7DD6-4AC4-B8AC-6D6E4237294F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23894630-7DD6-4AC4-B8AC-6D6E4237294F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D0E60B0-6DBE-4FF1-99A5-FEB68936864E} = {2B53F180-E655-4D62-81B8-BCF2FA954327}
+		{23894630-7DD6-4AC4-B8AC-6D6E4237294F} = {2B53F180-E655-4D62-81B8-BCF2FA954327}
+	EndGlobalSection
+EndGlobal
