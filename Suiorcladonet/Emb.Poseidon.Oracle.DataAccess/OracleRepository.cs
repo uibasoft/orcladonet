@@ -10,11 +10,13 @@ namespace Emb.Poseidon.Oracle.DataAccess
     public class OracleRepository : IOracleRepository
     {
         #region Constructor
+
         public OracleRepository(IOracleDbGet sqlDbGet, IOracleDbPut sqlDbPut)
         {
             DbGet = sqlDbGet;
             DbPut = sqlDbPut;
         }
+
         #endregion
 
         #region Propiedades

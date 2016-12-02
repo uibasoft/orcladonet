@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emb.Poseidon.Utils", "Emb.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emb.Poseidon.Oracle.DataAccess", "Emb.Poseidon.Oracle.DataAccess\Emb.Poseidon.Oracle.DataAccess.csproj", "{23894630-7DD6-4AC4-B8AC-6D6E4237294F}"
 EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "Emb.Poseidon.Utils.Nuget", "Emb.Poseidon.Utils.Nuget\Emb.Poseidon.Utils.Nuget.nuproj", "{96783161-D93B-4CC8-A6F0-31C142B5777F}"
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "Emb.Poseidon.Oracle.DataAccess.Nuget", "Emb.Poseidon.Oracle.DataAccess.Nuget\Emb.Poseidon.Oracle.DataAccess.Nuget.nuproj", "{345E9AED-7242-4FF6-9BD7-1FF9D6304985}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{23894630-7DD6-4AC4-B8AC-6D6E4237294F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23894630-7DD6-4AC4-B8AC-6D6E4237294F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23894630-7DD6-4AC4-B8AC-6D6E4237294F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96783161-D93B-4CC8-A6F0-31C142B5777F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96783161-D93B-4CC8-A6F0-31C142B5777F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96783161-D93B-4CC8-A6F0-31C142B5777F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96783161-D93B-4CC8-A6F0-31C142B5777F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{345E9AED-7242-4FF6-9BD7-1FF9D6304985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{345E9AED-7242-4FF6-9BD7-1FF9D6304985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345E9AED-7242-4FF6-9BD7-1FF9D6304985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{345E9AED-7242-4FF6-9BD7-1FF9D6304985}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7D0E60B0-6DBE-4FF1-99A5-FEB68936864E} = {2B53F180-E655-4D62-81B8-BCF2FA954327}
 		{23894630-7DD6-4AC4-B8AC-6D6E4237294F} = {2B53F180-E655-4D62-81B8-BCF2FA954327}
+		{96783161-D93B-4CC8-A6F0-31C142B5777F} = {2B53F180-E655-4D62-81B8-BCF2FA954327}
+		{345E9AED-7242-4FF6-9BD7-1FF9D6304985} = {2B53F180-E655-4D62-81B8-BCF2FA954327}
 	EndGlobalSection
 EndGlobal

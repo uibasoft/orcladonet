@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>96783161-d93b-4cc8-a6f0-31c142b5777f</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>Emb.Poseidon.Utils</Id>
+    <Version>1.0.0</Version>
+    <Title>Emb Poseidon Utils</Title>
+    <Authors>Luis Alberto Baigorria Rodas</Authors>
+    <Owners>uialberto, Luis Alberto Baigorria Rodas</Owners>
+    <Summary>Componente de Framework Poseidon es un componente que ofrece clases de resultado de comunicacion entre métodos. El cual permite retornar los errores que se producen durante el desarrollo del proceso.</Summary>
+    <Description>Componente de Framework Poseidon es un componente que ofrece clases de resultado de comunicacion entre métodos. El cual permite retornar los errores que se producen durante el desarrollo del proceso.</Description>
+    <ReleaseNotes>embol, framework, resources, resultelement, resultlist, resultoperation, resultpage, simpleitem</ReleaseNotes>
+    <ProjectUrl>https://github.com/uibasoft/orcladonet</ProjectUrl>
+    <LicenseUrl>https://github.com/uibasoft/orcladonet/blob/master/LICENSE</LicenseUrl>
+    <Copyright>Copyright © Uibasoft 2016</Copyright>
+    <Tags>embol, framework, resources, resultelement, resultlist, resultoperation, resultpage, simpleitem</Tags>
+    <IconUrl>http://uibasoft.com/img/emp/uiletter.ico</IconUrl>
+    <RequireLicenseAcceptance>true</RequireLicenseAcceptance>
+    <GenerateSymbolPackage>false</GenerateSymbolPackage>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emb.Poseidon.Utils\Emb.Poseidon.Utils.csproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
