@@ -18,24 +18,28 @@
   </PropertyGroup>
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
-    <Id>Emb.Poseidon.Oracle.DataAccess.Nuget</Id>
+    <Id>Emb.Poseidon.Oracle.DataAccess</Id>
     <Version>1.0.0</Version>
-    <Title>Emb.Poseidon.Oracle.DataAccess.Nuget</Title>
-    <Authors>LBAIGORRIA</Authors>
-    <Owners>LBAIGORRIA</Owners>
-    <Summary>Emb.Poseidon.Oracle.DataAccess.Nuget</Summary>
-    <Description>Emb.Poseidon.Oracle.DataAccess.Nuget</Description>
-    <ReleaseNotes>
-    </ReleaseNotes>
-    <ProjectUrl>
-    </ProjectUrl>
-    <LicenseUrl>
-    </LicenseUrl>
-    <Copyright>Copyright © LBAIGORRIA</Copyright>
-    <Tags>Emb.Poseidon.Oracle.DataAccess.Nuget</Tags>
+    <Title>Emb Poseidon Oracle DataAccess</Title>
+    <Authors>Luis Alberto Baigorria Rodas</Authors>
+    <Owners>uialberto,  Luis Alberto Baigorria Rodas</Owners>
+    <Summary>Componente de Framework Poseidon es un componente que ofrece clases de acceso a datos por medio de ADO.NET usando el paquete Oracle.ManagedDataAccess</Summary>
+    <Description>Componente de Framework Poseidon es un componente que ofrece clases de acceso a datos por medio de ADO.NET usando el paquete Oracle.ManagedDataAccess</Description>
+    <ReleaseNotes>OracleDbConexion, OracleDbGet, OracleDbPut, OracleRepository</ReleaseNotes>
+    <ProjectUrl>https://github.com/uibasoft/orcladonet</ProjectUrl>
+    <LicenseUrl>https://github.com/uibasoft/orcladonet/blob/master/LICENSE</LicenseUrl>
+    <Copyright>Copyright © Uibasoft 2016</Copyright>
+    <Tags>OracleDbConexion, OracleDbGet, OracleDbPut, OracleRepository</Tags>
+    <IconUrl>http://uibasoft.com/img/emp/uiletter.ico</IconUrl>
+    <RequireLicenseAcceptance>true</RequireLicenseAcceptance>
+    <GenerateSymbolPackage>false</GenerateSymbolPackage>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emb.Poseidon.Oracle.DataAccess\Emb.Poseidon.Oracle.DataAccess.csproj" />
+    <ProjectReference Include="..\Emb.Poseidon.Utils.Nuget\Emb.Poseidon.Utils.Nuget.nuproj" />
   </ItemGroup>
   <Import Project="$(NuProjPath)\NuProj.targets" />
 </Project>
