@@ -128,7 +128,8 @@ namespace Emb.Poseidon.Oracle.DataAccess
                     Connection = OracleConnection,
                     CommandType = CommandType.StoredProcedure,
                     CommandText = nameStoreProcedure,
-                    BindByName = true
+                    BindByName = true,
+                    
                 };
                 if (parameters != null)
                 {
