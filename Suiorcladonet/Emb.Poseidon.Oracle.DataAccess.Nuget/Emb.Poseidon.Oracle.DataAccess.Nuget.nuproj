@@ -19,7 +19,7 @@
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
     <Id>Emb.Poseidon.Oracle.DataAccess</Id>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Title>Emb Poseidon Oracle DataAccess</Title>
     <Authors>Luis Alberto Baigorria Rodas</Authors>
     <Owners>uialberto,  Luis Alberto Baigorria Rodas</Owners>
