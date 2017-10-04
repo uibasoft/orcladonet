@@ -26,6 +26,15 @@ namespace Emb.Poseidon.Oracle.DataAccess.Interfaces
         /// <returns>Elemento DataSet</returns>
         ResultElement<DataSet> DataSetExecuteStoreProcedure(string nameStoreProcedure, params OracleParameter[] parameters);
         /// <summary>
+        /// Ejecuta un procedimiento almacenado y retorna un elemento DataSet.
+        /// </summary>
+        /// <param name="nameStoreProcedure">Nombre del procedimiento almacenado.</param>
+        /// <param name="fetchSize">Tamaña de ida y vuelta para el fetch de información</param>
+        /// <param name="parameters">Lista de parámetros.</param>
+        /// <returns></returns>
+        ResultElement<DataSet> DataSetExecuteStoreProcedure(string nameStoreProcedure, int fetchSize, params OracleParameter[] parameters);
+
+        /// <summary>
         /// Ejecuta una consulta sql y retorna un elemento DataSet.
         /// </summary>
         /// <param name="sqlQuery">Consulta SQL.</param>

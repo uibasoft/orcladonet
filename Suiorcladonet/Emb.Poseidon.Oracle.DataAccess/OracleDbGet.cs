@@ -129,7 +129,7 @@ namespace Emb.Poseidon.Oracle.DataAccess
                     CommandType = CommandType.StoredProcedure,
                     CommandText = nameStoreProcedure,
                     BindByName = true,
-                    
+
                 };
                 if (parameters != null)
                 {
@@ -195,6 +195,56 @@ namespace Emb.Poseidon.Oracle.DataAccess
                 {
                     var msj =
                         $"Error en {GetType().Name}.{System.Reflection.MethodBase.GetCurrentMethod().Name}: {mensaje}.";
+                    Logger.Error(msj);
+                }
+            }
+            finally
+            {
+                CloseConnection();
+            }
+            return result;
+        }
+
+        public ResultElement<DataSet> DataSetExecuteStoreProcedure(string nameStoreProcedure, int fetchSize, params OracleParameter[] parameters)
+        {
+            var result = new ResultElement<DataSet>() { Element = null };
+            try
+            {
+                if (!OpenConnection())
+                {
+                    result.Errors.Add(_errorOpenConection);
+                    return result;
+                }
+                var command = new OracleCommand
+                {
+                    Connection = OracleConnection,
+                    CommandType = CommandType.StoredProcedure,
+                    CommandText = nameStoreProcedure,
+                    BindByName = true,
+                };
+
+                command.FetchSize = command.FetchSize * fetchSize;
+
+                if (parameters != null)
+                {
+                    foreach (var p in parameters)
+                        command.Parameters.Add(p);
+                }
+                using (var oracleDataAdapter = new OracleDataAdapter(command))
+                {
+                    var dataSet = new DataSet(DatasetName);
+                    oracleDataAdapter.Fill(dataSet);
+                    result.Element = dataSet;
+                }
+            }
+            catch (Exception ex)
+            {
+                var mensaje = ex.Message;
+                result.Errors.Add(_codigoErrorException);
+                result.Errors.Add(mensaje);
+                if (Logger != null)
+                {
+                    var msj = $"Error en {GetType().Name}.{System.Reflection.MethodBase.GetCurrentMethod().Name}: {mensaje}.";
                     Logger.Error(msj);
                 }
             }
